@@ -207,3 +207,8 @@ body {
   }
 }
 
+.primary-nav__item a:focus,
+.primary-nav__item a:active,
+.primary-nav__item a:hover {
+  text-decoration: none !important;
+}
