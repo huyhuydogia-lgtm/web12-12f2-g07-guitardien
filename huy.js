@@ -37,3 +37,33 @@ navItems.forEach(item => {
     }
   });
 });
+// Toggle menu
+const menuBtn = document.getElementById("menuBtn");
+const navPanel = document.getElementById("navPanel");
+
+menuBtn.addEventListener("click", () => {
+  navPanel.classList.toggle("open");
+});
+
+// Auto-close + smooth scroll fix
+document.querySelectorAll(".nav-item").forEach(item => {
+  item.addEventListener("click", () => {
+    navPanel.classList.remove("open");
+
+    // Scroll có offset
+    const targetId = item.dataset.target;
+    const section = document.getElementById(targetId);
+
+    if (!section) return;
+
+    const headerOffset = 80;
+    const elementTop = section.getBoundingClientRect().top + window.scrollY;
+    const scrollPos = elementTop - headerOffset;
+
+    window.scrollTo({
+      top: scrollPos,
+      behavior: "smooth"
+    });
+  });
+});
+
