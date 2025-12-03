@@ -50,7 +50,12 @@ body {
 /* Phần còn lại giữ nguyên */
 .brand { display: inline-flex; align-items: center; gap: 10px; }
 .brand__dot { width: 11px; height: 11px; border-radius: 50%; background: var(--color-accent); box-shadow: 0 0 14px rgba(213, 162, 33, 0.9); }
-.brand__text { font-weight: 700; letter-spacing: .06em; text-transform: uppercase; font-size: 16px; color: var(--color-text); }
+.brand__text { font-weight: 700; letter-spacing: .06em; text-transform: uppercase; font-size: 16px; color: var(--color-text); 
+  pointer-events: none; /* Không nhận click */
+  cursor: default;      /* Con trỏ mặc định */
+  text-decoration: none; /* Bỏ gạch chân nếu có */
+  color: inherit;        /* Giữ màu chữ hiện tại */
+             }
 
 .primary-nav { display: flex; align-items: center; gap: 8px; }
 .primary-nav__item { display: inline-flex; align-items: center; justify-content: center; height: 34px; padding: 0 14px; border-radius: 999px; font-size: 13px; font-weight: 600; border: 1px solid transparent; color: var(--color-muted); transition: all 0.2s ease; cursor: pointer; }
