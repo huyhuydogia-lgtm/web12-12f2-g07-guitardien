@@ -6,6 +6,7 @@ Dự án xây dựng website giới thiệu quá trình hình thành và phát t
 ────── ✧✧✧ ──────
 
 3. Thành viên & Phân công công việc
+
 | **Thành viên**         | **Nhiệm vụ**                                                                                                                                                        |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Đỗ Gia Huy**         | - Tìm kiếm và tổng hợp tài liệu về lịch sử guitar điện<br>- Viết nội dung timeline phát triển<br>- Mô tả các hãng đàn nổi tiếng<br>- Kiểm tra và xác thực thông tin |
